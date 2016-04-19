@@ -137,7 +137,7 @@
 					</div>
 					<div id="success"></div>
 					<!-- For success/fail messages -->
-					<button type="submit" class="btn btn-primary">Envoyer</button>
+					<button type="submit" class="btn btn-primary" href="mailto:romain.bondois@hei.fr">Envoyer</button>
 				</form>
 			</div>
 

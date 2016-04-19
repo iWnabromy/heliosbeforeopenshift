@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: 127.0.0.1
--- Généré le : Mer 30 Mars 2016 à 16:33
+-- Généré le : Lun 18 Avril 2016 à 15:31
 -- Version du serveur: 5.5.16
 -- Version de PHP: 5.3.8
 
@@ -33,7 +33,14 @@ CREATE TABLE IF NOT EXISTS `admin` (
   `mdp_Admin` varchar(150) NOT NULL,
   PRIMARY KEY (`nom_Admin`),
   KEY `id_Admin` (`id_Admin`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Contenu de la table `admin`
+--
+
+INSERT INTO `admin` (`id_Admin`, `nom_Admin`, `login_Admin`, `mdp_Admin`) VALUES
+(1, 'Admin', 'Helios', '70fad24005bf00fa21059bfb930dc9e8ed121551b7a522d7:b66436e033ef8cc734694c7b0c5b2ae9efc7dc8c9cb0b51b');
 
 -- --------------------------------------------------------
 
@@ -53,14 +60,20 @@ CREATE TABLE IF NOT EXISTS `article` (
   `langue_Article` varchar(150) NOT NULL,
   PRIMARY KEY (`titre_Article`),
   KEY `id_Article` (`id_Article`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
 
 --
 -- Contenu de la table `article`
 --
 
 INSERT INTO `article` (`id_Article`, `titre_Article`, `photoPresentation_Article`, `textePresentation_Article`, `photo_Article`, `texte_Article`, `date_Article`, `categorie_Article`, `langue_Article`) VALUES
-(1, 'Aperta ut provincias in parceretur', '10 Construction 2.jpg', 'Quo cognito Constantius ultra mortalem modum exarsit ac nequo casu idem Gallus de futuris incertus agitare quaedam conducentia saluti suae per itinera conaretur, remoti sunt omnes de industria milites agentes in civitatibus perviis.', '11 Présentation.jpg', 'Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis, iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed etiam acriter est resistendum.\r\n\r\nEt licet quocumque oculos flexeris feminas adfatim multas spectare cirratas, quibus, si nupsissent, per aetatem ter iam nixus poterat suppetere liberorum, ad usque taedium pedibus pavimenta tergentes iactari volucriter gyris, dum exprimunt innumera simulacra, quae finxere fabulae theatrales.\r\n\r\nEt interdum acciderat, ut siquid in penetrali secreto nullo citerioris vitae ministro praesente paterfamilias uxori susurrasset in aurem, velut Amphiarao referente aut Marcio, quondam vatibus inclitis, postridie disceret imperator. ideoque etiam parietes arcanorum soli conscii timebantur.', '2016-02-09', 'Coucou', 'fr');
+(1, 'Apertaé ut provincias in parceretur', '10 Construction 2.jpg', 'Quo cognito Constantius ultra mortalem modum exarsit ac nequo casu idem Gallus de futuris incertus agitare quaedam conducentia saluti suae per itinera conaretur, remoti sunt omnes de industria milites agentes in civitatibus perviis.', '11 Présentation.jpg', 'Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis, iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed etiam acriter est resistendum.\r\n\r\nEt licet quocumque oculos flexeris feminas adfatim multas spectare cirratas, quibus, si nupsissent, per aetatem ter iam nixus poterat suppetere liberorum, ad usque taedium pedibus pavimenta tergentes iactari volucriter gyris, dum exprimunt innumera simulacra, quae finxere fabulae theatrales.\r\n\r\nEt interdum acciderat, ut siquid in penetrali secreto nullo citerioris vitae ministro praesente paterfamilias uxori susurrasset in aurem, velut Amphiarao referente aut Marcio, quondam vatibus inclitis, postridie disceret imperator. ideoque etiam parietes arcanorum soli conscii timebantur.', '2016-02-09', 'Coucou', 'fr'),
+(3, 'Teste 3', '23 WSC 2009 4.JPG', 'Texte presentation', '23 WSC 2009 4.JPG', 'Texte Article', '2016-04-07', 'Coucou', 'fr'),
+(4, 'Teste 4', '31 WSC 2009.jpg', 'Texte presentation', '31 WSC 2009.jpg', 'texte Artcile', '2015-09-02', 'Toto', 'fr'),
+(5, 'Teste 5', 'article1.jpg', 'Texte Presentation', 'article1.jpg', 'Texte Article', '2016-09-13', 'Porte', 'fr'),
+(6, 'Teste 6', '31 WSC 2009.jpg', 'Texte Article', '31 WSC 2009.jpg', 'Texte article', '2016-04-21', 'Coucou', 'fr'),
+(7, 'Teste 8', '28 WSC 2009 9.JPG', 'Texte Article', '28 WSC 2009 9.JPG', 'Texte Article', '2016-04-15', 'Porte', 'fr'),
+(2, 'Toto', '4 Soufflerie 4.jpg', 'Texte presentation', '4 Soufflerie 4.jpg', 'Texte article', '2016-08-08', 'Loulou', 'fr');
 
 -- --------------------------------------------------------
 
@@ -110,7 +123,7 @@ CREATE TABLE IF NOT EXISTS `evenement` (
 --
 
 INSERT INTO `evenement` (`id_Evenement`, `article_Evenement`, `nom_Evenement`, `description_Evenement`, `date_Evenement`, `photo_Evenement`, `langue_Evenement`) VALUES
-(1, 'Aperta ut provincias in parceretur', 'C''est la fete', 'Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis, iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed etiam acriter est resistendum.', '2016-03-02', '12 Test sur circuit.jpg', 'fr');
+(1, 'Aperta ut provincias in parceretur', 'C''est la fête', 'Eténim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis, iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed etiam acriter est resistendum.', '2016-03-02', '12 Test sur circuit.jpg', 'fr');
 
 -- --------------------------------------------------------
 
@@ -130,15 +143,19 @@ CREATE TABLE IF NOT EXISTS `galerie` (
   `langue_Galerie` varchar(150) NOT NULL,
   PRIMARY KEY (`titre_Galerie`),
   KEY `id_Galerie` (`id_Galerie`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 --
 -- Contenu de la table `galerie`
 --
 
 INSERT INTO `galerie` (`id_Galerie`, `article_Galerie`, `titre_Galerie`, `description_Galerie`, `date_Galerie`, `lien_Galerie`, `categorie_Galerie`, `type_Galerie`, `langue_Galerie`) VALUES
+(6, 'Teste 3', 'Photo 1', 'toto', '2016-04-03', '19 Solar Event 6.jpg', 'Porte', 'photo', 'fr'),
+(7, 'Teste 3', 'Photo 2', 'Teste', '2015-12-15', 'article2.jpg', 'Coucou', 'photo', 'fr'),
+(8, 'Teste 8', 'Photo 3', 'Teste', '2016-06-02', '13 Salon Mondiale de L''automobile.jpg', 'Loulou', 'photo', 'fr'),
 (3, 'Aperta ut provincias in parceretur', 'Test 1', 'Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis, iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed etiam acriter est resistendum.', '2007-03-07', '14 Solar Event.JPG', 'Coucou', 'photo', 'fr'),
-(4, 'Aperta ut provincias in parceretur', 'Test 2', 'Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis, iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed etiam acriter est resistendum.', '2016-03-21', '15 Solar Event 2.JPG', 'Toto', 'video', 'fr');
+(4, 'Aperta ut provincias in parceretur', 'Test 2', 'Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis, iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed etiam acriter est resistendum.', '2016-03-21', '15 Solar Event 2.JPG', 'Toto', 'video', 'fr'),
+(5, 'Apertaé ut provincias in parceretur', 'Titi', 'fhdsjkqfhdkjqfdsqh', '2016-04-04', '5 Soufflerie 5.jpg', 'Salut', 'photo', 'fr');
 
 -- --------------------------------------------------------
 
@@ -148,9 +165,9 @@ INSERT INTO `galerie` (`id_Galerie`, `article_Galerie`, `titre_Galerie`, `descri
 
 CREATE TABLE IF NOT EXISTS `membre` (
   `id_Membre` int(11) NOT NULL AUTO_INCREMENT,
-  `nom_Membre` varchar(150) NOT NULL,
+  `nom_Membre` varchar(150) CHARACTER SET utf8 COLLATE utf8_roman_ci NOT NULL,
   `prenom_Membre` varchar(150) NOT NULL,
-  `job_Membre` varchar(150) NOT NULL,
+  `job_Membre` varchar(150) CHARACTER SET utf8 COLLATE utf8_unicode_ci NOT NULL,
   `photo_Membre` varchar(150) NOT NULL,
   `description_Membre` text NOT NULL,
   `facebook_Membre` varchar(150) NOT NULL,
@@ -161,14 +178,14 @@ CREATE TABLE IF NOT EXISTS `membre` (
   `langue_Membre` varchar(150) NOT NULL,
   PRIMARY KEY (`nom_Membre`,`prenom_Membre`,`id_Membre`),
   KEY `id_Membre` (`id_Membre`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 --
 -- Contenu de la table `membre`
 --
 
 INSERT INTO `membre` (`id_Membre`, `nom_Membre`, `prenom_Membre`, `job_Membre`, `photo_Membre`, `description_Membre`, `facebook_Membre`, `link_Membre`, `twitter_Membre`, `insta_Membre`, `mail_Membre`, `langue_Membre`) VALUES
-(1, 'Destriez', 'Simon', 'Président', '24 WSC 2009 5.JPG', 'Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis, iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed etiam acriter est resistendum.', 'https://www.facebook.com/simon.destriez?fref=ts', 'https://www.facebook.com/simon.destriez?fref=ts', 'https://www.facebook.com/simon.destriez?fref=ts', 'https://www.facebook.com/simon.destriez?fref=ts', 'simon.destriez@hei.fr', 'fr');
+(1, 'Destriez', 'Simon', 'Président', '28 WSC 2009 9.JPG', '    Président\r\nEtedsqdnim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis, iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed etiam acriter est resistendum.', 'https://www.facebook.com/simon.destriez?fref=ts', 'https://www.facebook.com/simon.destriez?fref=ts', 'https://www.facebook.com/simon.destriez?fref=ts', 'https://www.facebook.com/simon.destriez?fref=ts', 'simon.destriez@hei.fr', 'fr');
 
 -- --------------------------------------------------------
 
@@ -193,7 +210,7 @@ CREATE TABLE IF NOT EXISTS `partenaire` (
 --
 
 INSERT INTO `partenaire` (`id_Partenaire`, `nom_Partenaire`, `description_Partenaire`, `photo_Partenaire`, `lien_Partenaire`, `importance_Partenaire`, `langue_Partenaire`) VALUES
-(1, 'Kahina', 'Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis, iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed etiam acriter est resistendum.', 'tektronix.jpg', 'http://uk.tek.com/', 10, 'fr');
+(1, 'Alstrom', 'Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis, iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed etiam acriter est resistendum.', 'tektronix.jpg', 'http://uk.tek.com/', 10, 'fr');
 
 -- --------------------------------------------------------
 

@@ -4,7 +4,7 @@ var getArticleAccueil = function(){
 	requeteGetArticleAccueil.responseType = "json";
 	requeteGetArticleAccueil.onload = function(){
 		var a = this.response.length;
-		for(var i=0; i<a; i++){
+		for(var i=0; i<6; i++){
 			var lienPage = "article?id="+this.response[i].id_Article;
 			var lienImg = "img/"+this.response[i].photoPresentation_Article;
 			var divArticle = document.createElement('div');

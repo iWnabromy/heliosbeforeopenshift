@@ -55,7 +55,21 @@
 
             <!-- Blog Entries Column -->
             <div class="col-md-8" id="articleBlog">
+            <c:forEach items="${article}" var="article">
+            	<h2 class="blog1">
+                    <a href="article?id=${article.id_Article}">${article.titre_Article }</a>
+                </h2>
+                <p class="blog1"><i class="fa fa-clock-o"></i> Posté le ${article.date_Article}</p>
+                <hr class="blog1">
+                <a href="article?id=${article.id_Article}" class="blog1">
+                    <img class="img-responsive img-hover" src="img/${article.photoPresentation_Article}" alt="">
+                </a>
+                <hr class="blog1">
+                <p class="blog1">${article.textePresentation_Article}</p>
+                <a class="btn btn-primary" href="article?id=${article.id_Article}">Article complet <i class="fa fa-angle-right"></i></a>
 
+                <hr class="blog1">
+			</c:forEach>
                 <!-- Pager -->
                 <div class="row text-center" id="passagePage">
 			<div class="col-lg-12">
@@ -120,7 +134,7 @@
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/blogJS.js"></script>
+    <script type="text/javascript" src="js/blogsJS.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
