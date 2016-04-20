@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client: 127.0.0.1
--- Généré le : Lun 18 Avril 2016 à 15:31
+-- Généré le : Mer 20 Avril 2016 à 12:57
 -- Version du serveur: 5.5.16
 -- Version de PHP: 5.3.8
 
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `article` (
   `langue_Article` varchar(150) NOT NULL,
   PRIMARY KEY (`titre_Article`),
   KEY `id_Article` (`id_Article`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=11 ;
 
 --
 -- Contenu de la table `article`
@@ -68,6 +68,9 @@ CREATE TABLE IF NOT EXISTS `article` (
 
 INSERT INTO `article` (`id_Article`, `titre_Article`, `photoPresentation_Article`, `textePresentation_Article`, `photo_Article`, `texte_Article`, `date_Article`, `categorie_Article`, `langue_Article`) VALUES
 (1, 'Apertaé ut provincias in parceretur', '10 Construction 2.jpg', 'Quo cognito Constantius ultra mortalem modum exarsit ac nequo casu idem Gallus de futuris incertus agitare quaedam conducentia saluti suae per itinera conaretur, remoti sunt omnes de industria milites agentes in civitatibus perviis.', '11 Présentation.jpg', 'Etenim si attendere diligenter, existimare vere de omni hac causa volueritis, sic constituetis, iudices, nec descensurum quemquam ad hanc accusationem fuisse, cui, utrum vellet, liceret, nec, cum descendisset, quicquam habiturum spei fuisse, nisi alicuius intolerabili libidine et nimis acerbo odio niteretur. Sed ego Atratino, humanissimo atque optimo adulescenti meo necessario, ignosco, qui habet excusationem vel pietatis vel necessitatis vel aetatis. Si voluit accusare, pietati tribuo, si iussus est, necessitati, si speravit aliquid, pueritiae. Ceteris non modo nihil ignoscendum, sed etiam acriter est resistendum.\r\n\r\nEt licet quocumque oculos flexeris feminas adfatim multas spectare cirratas, quibus, si nupsissent, per aetatem ter iam nixus poterat suppetere liberorum, ad usque taedium pedibus pavimenta tergentes iactari volucriter gyris, dum exprimunt innumera simulacra, quae finxere fabulae theatrales.\r\n\r\nEt interdum acciderat, ut siquid in penetrali secreto nullo citerioris vitae ministro praesente paterfamilias uxori susurrasset in aurem, velut Amphiarao referente aut Marcio, quondam vatibus inclitis, postridie disceret imperator. ideoque etiam parietes arcanorum soli conscii timebantur.', '2016-02-09', 'Coucou', 'fr'),
+(8, 'Test 10', '19 Solar Event 6.jpg', 'fdsfdsf', '19 Solar Event 6.jpg', 'fdskfjdsklf', '2016-04-22', 'Coucou', 'fr'),
+(9, 'Test 11', '19 Solar Event 6.jpg', 'fdsqfdsqf', '19 Solar Event 6.jpg', 'fdsfqsdf', '2016-05-18', 'Coucou', '19 Solar Event 6.jpg'),
+(10, 'Teste 14', '19 Solar Event 6.jpg', 'vjfkfjdklfq', '19 Solar Event 6.jpg', 'lqkgjdqmfdk', '2016-06-10', 'Coucou', 'fr'),
 (3, 'Teste 3', '23 WSC 2009 4.JPG', 'Texte presentation', '23 WSC 2009 4.JPG', 'Texte Article', '2016-04-07', 'Coucou', 'fr'),
 (4, 'Teste 4', '31 WSC 2009.jpg', 'Texte presentation', '31 WSC 2009.jpg', 'texte Artcile', '2015-09-02', 'Toto', 'fr'),
 (5, 'Teste 5', 'article1.jpg', 'Texte Presentation', 'article1.jpg', 'Texte Article', '2016-09-13', 'Porte', 'fr'),
