@@ -13,7 +13,7 @@
 					class="icon-bar"></span> <span class="icon-bar"></span> <span
 					class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="#" style="padding-top: 6px;"> <img src="img/logo/helios.jpg" alt="">
+			<a class="navbar-brand" href="index" style="padding-top: 6px;"> <img src="img/logo/helios.jpg" alt="">
 			</a>
 		</div>
 		<!-- Collect the nav links, forms, and other content for toggling -->

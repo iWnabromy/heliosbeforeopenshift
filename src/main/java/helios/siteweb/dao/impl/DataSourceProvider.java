@@ -11,11 +11,11 @@ public class DataSourceProvider {
 	public static DataSource getDataSource() {
 		if (dataSource == null) {
 			dataSource = new MysqlDataSource();
-			dataSource.setServerName("localhost");
+			dataSource.setServerName("127.8.119.2");
 			dataSource.setPort(3306);
-			dataSource.setDatabaseName("helios_helios");
-			dataSource.setUser("root");
-			dataSource.setPassword("");
+			dataSource.setDatabaseName("helios");
+			dataSource.setUser("adminKLdPf4T");
+			dataSource.setPassword("kikUDH6lLnAc");
 		}
 		return dataSource;
 	}
