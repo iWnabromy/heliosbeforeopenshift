@@ -94,9 +94,9 @@
                 <div class="well">
                     <h4>Rechercher</h4>
                     <div class="input-group">
-                        <input type="text" class="form-control">
+                        <input type="text" class="form-control" id="champRecherche">
                         <span class="input-group-btn">
-                            <button class="btn btn-default" type="button"><i class="fa fa-search"></i></button>
+                            <button class="btn btn-default" type="button" id="boutonRecherche"><i class="fa fa-search"></i></button>
                         </span>
                     </div>
                     <!-- /.input-group -->

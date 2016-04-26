@@ -71,6 +71,18 @@ var getCategorie = function(){
 window.onload = function() {
 getCategorie();
 
+document.getElementById("boutonRecherche").onclick=function(){
+	var recherche = document.getElementById("champRecherche").value;
+	window.location.href = "recherche?texte="+recherche;
+};
+
+document.getElementById("champRecherche").onkeydown=function(event){
+	if(event.keyCode == 13){
+		var recherche = document.getElementById("champRecherche").value;
+		window.location.href = "recherche?texte="+recherche;
+	}
+};
+
 document.getElementById("page0").onclick=function(){
 	document.getElementById("page"+nb).setAttribute("class", "");
 	nb = 0;
