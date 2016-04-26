@@ -1,6 +1,7 @@
 package helios.siteweb.dao.impl;
 
 import java.sql.Connection;
+import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -16,7 +17,15 @@ public class ArticleDaoImpl implements ArticleDao{
 		List<Article> listeArticle = new ArrayList<Article>();
 		
 		try {
-			Connection connection = DataSourceProvider.getDataSource().getConnection();
+		    Class.forName("com.mysql.jdbc.Driver");
+		} catch (ClassNotFoundException e) {
+		     e.printStackTrace();
+		}
+		
+		try {
+		    Connection connection = DriverManager.getConnection("jdbc:mysql://127.8.119.2:3306/helios", "adminKLdPf4T", "kikUDH6lLnAc");
+
+			//Connection connection = DataSourceProvider.getDataSource().getConnection();
 			PreparedStatement stmt = connection.prepareStatement("SELECT id_Article, titre_Article, photoPresentation_Article FROM article ORDER BY date_Article DESC");
 			
 			ResultSet rs = stmt.executeQuery();

@@ -16,6 +16,8 @@ public class DataSourceProvider {
 			dataSource.setDatabaseName("helios");
 			dataSource.setUser("adminKLdPf4T");
 			dataSource.setPassword("kikUDH6lLnAc");
+			dataSource.setURL("jdbc:mysql://127.8.119.2:3306/helios");
+			System.out.println(""+dataSource.getUrl()+" "+dataSource.getURL());
 		}
 		return dataSource;
 	}
