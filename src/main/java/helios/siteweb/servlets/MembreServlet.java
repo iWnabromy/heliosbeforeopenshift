@@ -26,6 +26,7 @@ public class MembreServlet extends HttpServlet {
 		List<Membre> membres = HeliosManager.getInstance().getMembre();
 		request.setAttribute("listeMembres", membres);
 
+
 		RequestDispatcher view = request.getRequestDispatcher("../WEB-INF/Admin/membre.jsp");
 		view.forward(request, response);
 	}

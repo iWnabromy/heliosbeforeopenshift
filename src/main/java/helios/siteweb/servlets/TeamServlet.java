@@ -17,6 +17,10 @@ public class TeamServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
+		
+		response.setCharacterEncoding("UTF-8");
+		request.setCharacterEncoding("UTF-8");
+
 		RequestDispatcher view = request.getRequestDispatcher("WEB-INF/team.jsp");
 		view.forward(request, response);
 	}

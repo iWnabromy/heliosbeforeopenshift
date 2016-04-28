@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="utf-8"%>
 
 <!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -24,17 +24,17 @@
 				<li><a href="index">Accueil</a></li>
 				<li><a href="blog">Blog</a></li>
 				<li><a href="galerie">Galerie</a></li>
-				<li><a href="evenements">Evénements</a></li>
+				<li><a href="evenements">EvÃ©nements</a></li>
 				<li class="dropdown"><a href="#" class="dropdown-toggle"
 					data-toggle="dropdown">Voitures <b class="caret"></b></a>
 					<ul class="dropdown-menu">
-						<li><a href="portfolio-1-col.html">Hélios 1</a></li>
-						<li><a href="portfolio-2-col.html">Hélios 2</a></li>
-						<li><a href="portfolio-3-col.html">Hélios 3</a></li>
-						<li><a href="portfolio-4-col.html">Hélios 4</a></li>
-						<li><a href="portfolio-item.html">Hélios 5</a></li>
+						<li><a href="portfolio-1-col.html">HÃ©lios 1</a></li>
+						<li><a href="portfolio-2-col.html">HÃ©lios 2</a></li>
+						<li><a href="portfolio-3-col.html">HÃ©lios 3</a></li>
+						<li><a href="portfolio-4-col.html">HÃ©lios 4</a></li>
+						<li><a href="portfolio-item.html">HÃ©lios 5</a></li>
 					</ul></li>
-				<li><a href="team">L'équipe</a></li>
+				<li><a href="team">L'Ã©quipe</a></li>
 				<li><a href="partenaires">Partenaires</a></li>
 				<li><a href="contact">Contact</a></li>
 			</ul>

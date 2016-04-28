@@ -149,7 +149,7 @@ var getCategorie = function(){
 			ulCategorie.setAttribute("class", "list-unstyled");
 			
 			for(var i=d; i<b+d; i++){
-				var lienPage = "article?categorie="+this.response[i].categorie_Article;
+				var lienPage = "categorie?categorie="+this.response[i].categorie_Article;
 				
 				var liCategorie = document.createElement('li');
 				var aCategorie = document.createElement('a');
@@ -173,6 +173,19 @@ var getCategorie = function(){
 window.onload = function() {
 getArticle(nb);
 getCategorie();
+
+document.getElementById("boutonRecherche").onclick=function(){
+	var recherche = document.getElementById("champRecherche").value;
+	window.location.href = "recherche?texte="+recherche;
+};
+
+document.getElementById("champRecherche").onkeydown=function(event){
+	if(event.keyCode == 13){
+		var recherche = document.getElementById("champRecherche").value;
+		window.location.href = "recherche?texte="+recherche;
+	}
+};
+
 
 document.getElementById("page0").onclick=function(){
 	document.getElementById("page"+nb).setAttribute("class", "");

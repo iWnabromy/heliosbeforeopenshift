@@ -91,7 +91,7 @@
 
 	<!-- jQuery -->
 	<script src="js/jquery.js"></script>
-	<script type="text/javascript" src="js/membreJS.js"></script>
+	<script type="text/javascript" src="js/membreJS.js" charset="utf-8"></script>
 
 	<!-- Bootstrap Core JavaScript -->
 	<script src="js/bootstrap.min.js"></script>

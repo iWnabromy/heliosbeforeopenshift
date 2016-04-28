@@ -1,11 +1,10 @@
-var getMembre = function(){
+﻿var getMembre = function(){
 	var requeteGetMembre = new XMLHttpRequest();
 	requeteGetMembre.open("GET", "ws/membre");
 	requeteGetMembre.responseType = "json";
 	requeteGetMembre.onload = function(){
 		var a = this.response.length;
 		for(var i=0; i<a; i++){
-			//var lienPage = "/helios/"+this.response[i].titre_Article;
 			var lienImg = "img/"+this.response[i].photo_Membre;
 			
 			var div1Membre = document.createElement('div');
@@ -52,6 +51,7 @@ var getMembre = function(){
 			h3Membre.textContent = this.response[i].prenom_Membre + " " + this.response[i].nom_Membre;
 			
 			smallMembre.textContent = this.response[i].job_Membre;
+			console.log(this.response[i].job_Membre);
 			pMembre.textContent = this.response[i].description_Membre;
 			
 			ulMembre.setAttribute("class", "list-inline");
